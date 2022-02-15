@@ -1,0 +1,22 @@
+{
+  "name": "chaejieun-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaejieun/chaejieun-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaejieun/chaejieun-portfolio/issues"
+  },
+  "homepage": "https://github.com/chaejieun/chaejieun-portfolio#readme"
+}
