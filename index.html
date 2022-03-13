@@ -18,6 +18,8 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+		
     </head>
     <body>
         
@@ -59,7 +61,7 @@
 										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 									</ul>
 								</li> -->
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
 							</ul>
 						</div> 
 					</div>
@@ -101,7 +103,13 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
+        <script>
+			var now = dayjs();
+			var date = dayjs("2019-11-27");
+			const diff = now.diff(date, "day"); 
+			console.log(diff)
+		</script>
+	 	
         <!--================Welcome Area =================-->
         <section class="welcome_area p_120">
         	<div class="container">
@@ -110,11 +118,12 @@
         				<div class="welcome_text">
         					<h4>About Myself</h4>
         					<p>29살, 비전공자로 처음 개발을 시작하여 낯설고 많이 헤맸었지만, 하나씩 터득해나가는 제 자신을 발견하며 또 다른 재미를 느끼게 되었습니다. 그리하여 현재까지 후진하지 않고 전진 중인 웹 개발자입니다.<div class=""></div></p>
-        					<div class="row">
+        					<!--
+							<div class="row">
         						<div class="col-md-4">
         							<div class="wel_item">
         								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
+        								<h4 class="diff">800</h4>
         								<p>코딩한 일수</p>
         							</div>
         						</div>
@@ -133,6 +142,7 @@
         							</div>
         						</div>
         					</div>
+							-->
         				</div>
         			</div>
         			<div class="col-lg-6">
@@ -158,15 +168,15 @@
 									</div>
 								</div>
 								<div class="skill_item">
-									<h4>HTML <span class="counter">95</span>%</h4>
+									<h4>HTML <span class="counter">80</span>%</h4>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 								<div class="skill_item">
-									<h4>React <span class="counter">75</span>%</h4>
+									<h4>React <span class="counter">70</span>%</h4>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
@@ -355,34 +365,8 @@
         					</div>
         				</div>
         			</div>
-        			<div class="col-lg-4">
-        				<div class="l_blog_item">
-        					<div class="l_blog_img">
-        						<img class="img-fluid" src="img/blog/home-blog/home-blog-2.jpg" alt="">
-        					</div>
-        					<div class="l_blog_text">
-        						<div class="date">
-        							<a href="#">25 October, 2017  |  By Mark Wiens</a>
-        						</div>
-        						<a href="#"><h4>Make Myspace Your Best Designed Space</h4></a>
-        						<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="l_blog_item">
-        					<div class="l_blog_img">
-        						<img class="img-fluid" src="img/blog/home-blog/home-blog-3.jpg" alt="">
-        					</div>
-        					<div class="l_blog_text">
-        						<div class="date">
-        							<a href="#">25 October, 2017  |  By Mark Wiens</a>
-        						</div>
-        						<a href="#"><h4>Video Games Playing With Imagination</h4></a>
-        						<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay</p>
-        					</div>
-        				</div>
-        			</div>
+        			
+        			
         		</div>
         	</div>
         </section>
